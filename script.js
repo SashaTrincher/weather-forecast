@@ -19,8 +19,8 @@ function getWeather() {
         .then(data => {
 
             const temperature = Math.floor(data.main.temp);
-            const windSpeed = data.wind.speed;
-            const humidity = data.main.humidity;
+            const windSpeed = Math.floor(data.wind.speed);
+            const humidity = Math.floor(data.main.humidity);
             const description = data.weather[0].description;
 
             temperatureElement.textContent = `${temperature}°C`;
