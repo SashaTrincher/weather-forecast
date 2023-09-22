@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="search-container">
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="search-input" type="text" id="city" placeholder="Enter city:">
+                <div onclick="getWeather()" class="search-button" id="srcBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>   
+            <div class="details-container">
+                <div class="d-c-up">
+                    <img src="" alt="test" class="weatherImg inactive" id="wether-icon">
+                    <p class="temp-txt" id="temperature"></p>
+                    <p class="des-txt" id="description"></p>
+                </div>
+                <div class="d-c-down">
+                    <div class="hum-wrapper">
+                        <img src="./img/humidity-icon.jpg" class="hum-img inactive" alt="">
+                        <div class="hum-txt-wrp">
+                            <p class="hum-txt" id="humidity"></p>
+                            <p class="hum-sub-txt" id="humTxt"></p>
+                        </div>
+                    </div>
+                    <div class="wd-sp-wrapper">
+                        <i class="fa-solid fa-wind inactive"></i>
+                        <div class="wd-sp-txt-wrp">
+                            <p class="wind-txt" id="windSpeed"></p>
+                            <p class="wind-sub-txt" id="windSpeedTxt"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/f3b67a7541.js" crossorigin="anonymous"></script>
+</body>
+</html>
